@@ -17,23 +17,10 @@ class MainPage extends StatelessWidget {
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.red)),
               onPressed: () {
-                Navigator.pushNamed(context, "/red_page");
+                Navigator.pushNamed(context, "/send_value", arguments: 65,);
               },
-              child: const Text("Red Page")),
-          ElevatedButton(
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.yellow)),
-              onPressed: () {
-                Navigator.pushNamed(context, "/yellow_page");
-              },
-              child: const Text("Yellow Page")),
-          ElevatedButton(
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green)),
-              onPressed: () {
-                Navigator.pushNamed(context, "/green_page");
-              },
-              child: const Text("Green Page")),
+              child: const Text("Send Value")),
+          
         ],
       )),
     );
